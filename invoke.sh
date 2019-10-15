@@ -1,0 +1,8 @@
+# echo -n '{"emp_email": "ab@b.com","emp_name": "abhishek","emp_dept": "Product Divison"}' | DEBUG=1 fn invoke sbfn create-emp
+
+# change below compartment id
+echo '{"cloudEventsVersion":"0.1","eventID":"d947848a-4b61-41d5-83b4-c8ab594f7ca3","eventType":"com.oraclecloud.objectstorage.createobject","source":"objectstorage","eventTypeVersion":"2.0","eventTime":"2019-01-10T21:19:24Z","contentType":"application/json","extensions":{"compartmentId":"ocid1.compartment.oc1.......unique_id"},"data":{"compartmentId":"xxx","compartmentName":"example_name","resourceName":"MonthlyReport.xlsx","resourceId":"ocid1.bucket.oc1.......unique_id","availabilityDomain":"all","additionalDetails":{"eTag":"f8ffb6e9-f602-460f-a6c0-00b5abfa24c7","namespace":"example_namespace","bucketName":"SR081400-BUCKET","bucketId":"ocid1.bucket.oc1......unique_id","archivalState":"Available"}}}' | DEBUG=1 fn invoke sbfn create-emp
+
+# directly copy to eclipse string variable
+
+# echo '{"cloudEventsVersion":"0.1","eventID":"d947848a-4b61-41d5-83b4-c8ab594f7ca3","eventType":"com.oraclecloud.objectstorage.createobject","source":"objectstorage","eventTypeVersion":"2.0","eventTime":"2019-01-10T21:19:24Z","contentType":"application/json","extensions":{"compartmentId":"ocid1.compartment.oc1.......unique_id"},"data":{"compartmentId":"xxx","compartmentName":"example_name","resourceName":"HotelReview.xlsx","resourceId":"ocid1.bucket.oc1.......unique_id","availabilityDomain":"all","additionalDetails":{"eTag":"f8ffb6e9-f602-460f-a6c0-00b5abfa24c7","namespace":"example_namespace","bucketName":"SR081400-BUCKET","bucketId":"ocid1.bucket.oc1......unique_id","archivalState":"Available"}}}' | DEBUG=1 fn invoke sbfn create-emp

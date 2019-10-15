@@ -1,0 +1,7 @@
+[DEFAULT]
+user=xxx
+fingerprint=xxx
+key_file=/function/oci/fn_private.pem
+tenancy=xxx
+region=us-ashburn-1
+pass_phrase=xxx
